@@ -50,7 +50,7 @@
 
       function generate() {
           num = Math.floor((Math.random() * 21) + 1);
-          if( unique.indexOf(num) == -1 ) {
+          if( unique.indexOf(num) == -1 && num != 5) {
             unique.push( num );
           } else {
             generate();
