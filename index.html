@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="myFunction()">Genera</button>
+
+<p id="out"></p>
+
+<script>
+var num;
+var unique = [];
+
+function generate() {
+    num = Math.floor((Math.random() * 22) + 1);
+    if( unique.indexOf(num) == -1 ) {
+    	unique.push( num );
+    } else {
+      generate();
+    }
+}
+
+function myFunction() {
+	generate();
+  document.getElementById("out").innerHTML = num;
+}
+</script>
+
+</body>
+</html>
