@@ -1,9 +1,48 @@
 <!DOCTYPE html>
 <html>
-  <body>
-    <button onclick="myFunction()">Genera</button>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  </head>
 
-    <p id="out"></p>
+  <body>
+    <style media="screen" type="text/css">
+      body {
+        background: #232323;
+        padding: 0px;
+        margin: 0px;
+        font-family: 'Nunito', sans-serif;
+        font-size: 25px;
+      }
+
+      button {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+        background: #8BC34A;
+        color: #232323;
+        border: 1px solid #8BC34A;
+        border-radius: 5px;
+        padding: 15px;
+        width: 20%;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+      }
+
+      p {
+        text-align: center;
+        color: #8BC34A;
+      }
+    </style>
+
+    <p>
+      Generatore di numeri casuali compresi tra 1 e 21<br>
+
+      <button onclick="myFunction()">Genera</button>
+
+      <p id="out"></p>
+    </p>
 
     <script>
       var num;
